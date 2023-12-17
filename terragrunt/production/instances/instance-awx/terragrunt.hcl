@@ -13,5 +13,5 @@ inputs = {
     image        = "ubuntu-os-cloud/ubuntu-2004-lts"
     machine_type = "e2-medium"
     boot_disk_size_gb = 50  # Specify the size of the boot disk in gigabytes
-    static_ip_name = "static-ip-awx"
+    // static_ip_name = "static-ip-awx"
 }
