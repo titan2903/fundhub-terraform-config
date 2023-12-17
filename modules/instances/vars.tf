@@ -39,3 +39,11 @@ variable "network" {
 variable "sub_network" {
   type = string
 }
+
+variable "boot_disk_size_gb" {
+  type = number
+}
+
+variable "static_ip_name" {
+  type = string
+}
