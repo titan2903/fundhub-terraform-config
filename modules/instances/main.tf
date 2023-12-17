@@ -23,7 +23,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
   name         = var.name
   machine_type = var.machine_type
-  tags = var.network_tags
+  tags         = var.network_tags
 
   boot_disk {
     initialize_params {

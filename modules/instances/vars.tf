@@ -15,10 +15,6 @@ variable "credentials" {
   type = string
 }
 
-# variable "boot_disk_size_gb" {
-#   type = number
-# }
-
 variable "name" {
   type        = string
   description = "VM instance name"
@@ -47,7 +43,3 @@ variable "sub_network" {
 variable "prefix" {
   type = string
 }
-
-# variable "static_ip_name" {
-#   type = string
-# }
