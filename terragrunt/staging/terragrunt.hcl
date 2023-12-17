@@ -18,4 +18,5 @@ inputs = {
   name              = "${basename(get_terragrunt_dir())}" # instance name
   network           = "default"
   sub_network       = "default"
+  address_type      = "EXTERNAL"
 }
