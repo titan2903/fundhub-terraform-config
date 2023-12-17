@@ -18,5 +18,4 @@ inputs = {
   name              = "${basename(get_terragrunt_dir())}" # instance name
   network           = "default"
   sub_network       = "default"
-  interface_scratch_disk = "NVME"
 }

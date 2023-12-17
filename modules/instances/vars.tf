@@ -51,7 +51,3 @@ variable "prefix" {
 variable "static_ip_name" {
   type = string
 }
-
-variable "interface_scratch_disk" {
-  type = string
-}
