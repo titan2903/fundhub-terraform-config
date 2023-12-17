@@ -15,10 +15,10 @@ provider "google" {
   credentials = var.credentials # login menggunakan json key yang telah di create
 }
 
-# data "google_compute_address" "external_static_ip" {
-#   name   = var.static_ip_name
-#   region = var.region
-# }
+data "google_compute_address" "external_static_ip" {
+  name   = var.static_ip_name
+  region = var.region
+}
 
 resource "google_compute_instance" "default" {
   name         = var.name
