@@ -12,6 +12,6 @@ inputs = {
     network_tags = ["allow-specific-port"]
     image = "ubuntu-os-cloud/ubuntu-2204-lts"
     machine_type = "e2-micro"
-    size = 50  # Specify the size of the boot disk in gigabytes
+    boot_disk_size_gb = 50  # Specify the size of the boot disk in gigabytes
     static_ip_name = "static-ip-mariadb"
 }

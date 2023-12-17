@@ -17,4 +17,5 @@ inputs = {
   credentials       = "/etc/atlantis/credentials/gcp-fundhub-stag.json" # di sesuaikan dengan path location credentials json key
   name              = "${basename(get_terragrunt_dir())}" # instance name
   prefix            = "${path_relative_to_include()}/terraform.tfstate"
+  interface_scratch_disk = "NVME"
 }

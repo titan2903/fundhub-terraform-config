@@ -32,6 +32,11 @@ resource "google_compute_instance" "default" {
     }
   }
 
+  // Balanced persistent scratch disk
+  scratch_disk {
+    interface = var.interface_scratch_disk
+  }
+
   network_interface {
     network    = var.network
     subnetwork = var.sub_network
