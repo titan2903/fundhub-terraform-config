@@ -48,6 +48,6 @@ variable "prefix" {
   type = string
 }
 
-variable "static_ip_name" {
-  type = string
-}
+# variable "static_ip_name" {
+#   type = string
+# }
