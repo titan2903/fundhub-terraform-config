@@ -1,3 +1,4 @@
+# Google cloud storage configuration
 remote_state {
   backend = "gcs"
   config = {
