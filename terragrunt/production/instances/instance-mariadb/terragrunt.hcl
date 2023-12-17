@@ -7,7 +7,6 @@ include {
   path   = find_in_parent_folders()
 }
 
-// Jika value di input ini tidak di defined, maka akan mengambil value dari base configuration
 inputs = {
     network_tags = ["allow-specific-port"]
     image = "ubuntu-os-cloud/ubuntu-2204-lts"
