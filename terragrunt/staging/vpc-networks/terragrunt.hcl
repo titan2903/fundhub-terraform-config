@@ -15,4 +15,5 @@ inputs = {
   region            = "asia-southeast2"
   address_type      = "EXTERNAL"
   name              = "${basename(get_terragrunt_dir())}" # static ip name
+  zone              = "asia-southeast2-a"
 }
