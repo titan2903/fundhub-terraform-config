@@ -14,4 +14,6 @@ inputs = {
     machine_type = "e2-small"
     boot_disk_size_gb = 10  # Specify the size of the boot disk in gigabytes
     static_ip_name = "static-ip-jenkins-agent-sandbox"
+    network           = "default"
+    sub_network       = "default"
 }

@@ -16,6 +16,4 @@ inputs = {
   zone              = "asia-southeast2-a"
   credentials       = "/etc/atlantis/credentials/gcp-fundhub.json" # di sesuaikan dengan path location credentials json key
   name              = "${basename(get_terragrunt_dir())}" # instance name
-  network           = "default"
-  sub_network       = "default"
 }
