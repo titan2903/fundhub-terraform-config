@@ -16,4 +16,6 @@ inputs = {
   region        = "asia-southeast2"
   name          = "${basename(get_terragrunt_dir())}"
   zone          = "asia-southeast2-a"
+   network      = "default"
+  sub_network   = "default"
 }
