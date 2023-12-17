@@ -5,7 +5,7 @@ remote_state {
     bucket         = "fundhub-tfstate-bucket-prod"
     location       = "asia-southeast2"
     prefix         = "${path_relative_to_include()}/terraform.tfstate"
-    credentials    = "/etc/atlantis/credentials/gcp-fundhub.json" # di sesuaikan dengan path location credentials json key
+    credentials    = "/etc/atlantis/credentials/gcp-fundhub.json" # di sesuaikan dengan path location credentials json key di atlantis server
   }
 }
 
