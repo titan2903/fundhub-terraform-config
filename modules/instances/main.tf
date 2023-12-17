@@ -15,11 +15,6 @@ provider "google" {
   credentials = var.credentials # login menggunakan json key yang telah di create
 }
 
-# data "google_compute_address" "external_static_ip" {
-#   name   = var.static_ip_name
-#   region = var.region
-# }
-
 resource "google_compute_instance" "default" {
   name         = var.name
   machine_type = var.machine_type
@@ -28,7 +23,6 @@ resource "google_compute_instance" "default" {
   boot_disk {
     initialize_params {
       image = var.image
-      # size  = var.boot_disk_size_gb
     }
   }
 
@@ -38,7 +32,6 @@ resource "google_compute_instance" "default" {
 
     access_config {
       // Ephemeral public IP
-      # nat_ip = data.google_compute_address.external_static_ip.address
     }
   }
 }

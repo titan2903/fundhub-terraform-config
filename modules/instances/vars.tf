@@ -39,7 +39,3 @@ variable "network" {
 variable "sub_network" {
   type = string
 }
-
-variable "prefix" {
-  type = string
-}
