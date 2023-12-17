@@ -3,7 +3,6 @@ remote_state {
   backend = "gcs"
   config = {
     bucket         = "fundhub-tfstate-bucket-prod"
-    location       = "asia-southeast2"
     prefix         = "${path_relative_to_include()}/terraform.tfstate"
     credentials    = "/etc/atlantis/credentials/gcp-fundhub.json" # di sesuaikan dengan path location credentials json key di atlantis server
   }
@@ -16,4 +15,6 @@ inputs = {
   zone              = "asia-southeast2-a"
   credentials       = "/etc/atlantis/credentials/gcp-fundhub.json" # di sesuaikan dengan path location credentials json key
   name              = "${basename(get_terragrunt_dir())}" # instance name
+  network           = "default"
+  sub_network       = "default"
 }
