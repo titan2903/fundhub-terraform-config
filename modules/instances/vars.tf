@@ -15,9 +15,9 @@ variable "credentials" {
   type = string
 }
 
-variable "boot_disk_size_gb" {
-  type = number
-}
+# variable "boot_disk_size_gb" {
+#   type = number
+# }
 
 variable "name" {
   type        = string
