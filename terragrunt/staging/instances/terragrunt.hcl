@@ -12,10 +12,10 @@ remote_state {
 # default or base configuration
 inputs = {
   project_id        = "fundhub-staging"
+  credentials       = "/etc/atlantis/credentials/gcp-fundhub-stag.json" # di sesuaikan dengan path location credentials json key di atlantis server
   region            = "asia-southeast2"
+  name              = "${basename(get_terragrunt_dir())}" # static ip name
   zone              = "asia-southeast2-a"
-  credentials       = "/etc/atlantis/credentials/gcp-fundhub-stag.json" # di sesuaikan dengan path location credentials json key
-  name              = "${basename(get_terragrunt_dir())}" # instance name
   network           = "default"
   sub_network       = "default"
 }

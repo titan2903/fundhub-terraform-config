@@ -3,7 +3,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "5.2.0"
+      version = "5.9.0"
     }
   }
 }
@@ -28,7 +28,7 @@ resource "google_compute_instance" "default" {
   boot_disk {
     initialize_params {
       image = var.image
-      size  = var.boot_disk_size_gb
+      # size  = var.boot_disk_size_gb
     }
   }
 
