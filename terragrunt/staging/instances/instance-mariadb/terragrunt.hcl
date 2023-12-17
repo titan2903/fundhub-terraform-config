@@ -16,4 +16,6 @@ inputs = {
     machine_type = "e2-micro"
     // boot_disk_size_gb = 35  # Specify the size of the boot disk in gigabytes
     static_ip_name = "static-ip-mariadb"
+    network           = "default"
+    sub_network       = "default"
 }
