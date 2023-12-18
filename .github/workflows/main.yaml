@@ -28,4 +28,4 @@ jobs:
                 "color": "#00FF00"
               }
             ]
-          }' ${{ secrets.DISCORD_WEBHOOK_URL }}
+          }' ${{ vars.DISCORD_WEBHOOK_URL }}
