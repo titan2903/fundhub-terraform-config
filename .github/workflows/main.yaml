@@ -3,7 +3,7 @@ name: Release Fundhub client
 on:
   push:
     branches:
-      - "*"
+      - master
 
 jobs:
   build-push:
@@ -25,7 +25,7 @@ jobs:
               {
                 "title": "Terraform Status",
                 "description": "Terraform apply was successful!",
-                "color": 65280
+                "color": "#00FF00"
               }
             ]
           }' ${{ secrets.DISCORD_WEBHOOK_URL }}
