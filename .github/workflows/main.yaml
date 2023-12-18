@@ -1,0 +1,32 @@
+name: Release Fundhub client
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: list of files
+        run: ls -la
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Send Discord Notification on Success
+        if: success()
+        run: |
+          curl -X POST -H "Content-Type: application/json" -d '{
+            "content": "Terraform Applied: Success!",
+            "embeds": [
+              {
+                "title": "Terraform Status",
+                "description": "Terraform apply was successful!",
+                "color": 65280  // Green color
+              }
+            ]
+          }' ${{ secrets.DISCORD_WEBHOOK_URL }}
