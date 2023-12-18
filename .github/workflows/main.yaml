@@ -25,7 +25,7 @@ jobs:
               {
                 "title": "Terraform Status",
                 "description": "Terraform apply was successful!",
-                "color": "65280"
+                "color": 65280
               }
             ]
           }' ${{ secrets.DISCORD_WEBHOOK_URL }}
