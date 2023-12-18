@@ -18,15 +18,14 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Send Discord Notification on Success
-        if: success()
         run: |
           curl -X POST -H "Content-Type: application/json" -d '{
-            "content": "Terraform Applied: Success!",
+            "content": "Terraform Applied",
             "embeds": [
               {
                 "title": "Terraform Status",
                 "description": "Terraform apply was successful!",
-                "color": 65280  // Green color
+                "color": "#00FF00"
               }
             ]
           }' ${{ secrets.DISCORD_WEBHOOK_URL }}
