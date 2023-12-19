@@ -20,11 +20,11 @@ jobs:
       - name: Send Discord Notification on Success
         run: |
           curl -X POST -H "Content-Type: application/json" -d '{
-            "content": "Terraform Applied",
+            "content": "Atlantis Applied",
             "embeds": [
               {
-                "title": "Terraform Status",
-                "description": "Terraform apply was successful!",
+                "title": "Atlantis Status",
+                "description": "Atlantis apply was successful!",
                 "color": 65280
               }
             ]
