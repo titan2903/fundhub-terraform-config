@@ -2,7 +2,6 @@ terraform {
   source = "../../../../modules/instances"
 }
 
-// find `terragrunt.hcl` for base configuration
 include {
   path   = find_in_parent_folders()
 }
